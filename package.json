@@ -7,6 +7,7 @@
     "start": "NODE_ENV=production node dist/index.js",
     "dev": "NODE_ENV=development nodemon src/index.js --exec babel-node --presets env",
     "build": "babel src -d dist",
+    "postinstall": "npm run build",
     "docs": "apidoc -i src",
     "docs:deploy": "sh deploydocs.sh",
     "serve": "node dist/index.js",

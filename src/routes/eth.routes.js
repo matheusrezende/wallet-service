@@ -11,11 +11,6 @@ routes.post(
 );
 
 routes.post(
-  '/hd/wallet/:xpriv',
-  ETHController.createHDWalletNode,
-);
-
-routes.post(
   '/validate',
   validate(ETHController.validateEthAddress),
   ETHController.validateEthAddress,
